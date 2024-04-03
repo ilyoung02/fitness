@@ -1,0 +1,10 @@
+section {
+    width: 100%;
+    display: flex;
+
+    background-image: url(./assets/training-828726.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
