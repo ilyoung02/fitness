@@ -54,7 +54,7 @@ const loginHandler = () => {
             </LogoImage>
 
             <Title>
-            맞춤형 AI 피트니스 챌린지
+            Health Buddy
             </Title>
 
             <SettingFilled type="button" onClick={openModal}></SettingFilled>
