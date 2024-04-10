@@ -17,10 +17,10 @@ export const CallGPT = async ({ prompt }) => {
     {
       role: "user",
       content: `1.[Fitness Challenge]:하단의 """으로 구분된[사용자 건강 상태]를 이해한 후 운동 챌린지를 작성.
-      2.[Physical summarize]:[사용자 건강 상태]를 순서대로 요약 후, 요약한 내용을 바탕으로 한 단락으로 사용자 신체 상태 요약을 작성합니다.
-      3.[Physical evaluates]:작성한 사용자 신체 상태 요약을 보고 사용자의 신체를 평가를 합니다.
-      4.[Physical analysis]:전문적인 운동 지식과 영양 지식을 활용해서 신체 상태 분석, 영양 분석을 합니다.
-      5.[3 action tips]:앞으로 사용자가 처한 상황에서 도움이 되는 행동요령 3가지를 작성합니다.
+      2.[Physical summarize]:[사용자 건강 상태]를 순서대로 요약 후, 요약한 내용을 바탕으로 의학적 지식과 운동 지식을 통해 사용자 신체 상태를 작성합니다.
+      3.[Physical evaluates]:작성한 사용자 신체 상태를 보고 사용자의 신체에 대한 헬스 트레이너나 의사처럼 전문적인 평가를 합니다.
+      4.[Physical analysis]:전문적인 운동, 헬스 지식과 영양 지식을 활용해서 신체 상태를 구체적으로 분석, 영양 분석을 합니다.
+      5.[3 action tips]:앞으로 사용자가 처한 상황에서 도움이 되는 행동요령이나 운동 방법, 운동 목표 등으로 이용해 3가지를 작성합니다.
       6.[image]:지금까지 내용을 하나의 키워드로 만들어서 image를 만듭니다.
       
       Translate into Korean and Use the output in the following JSON format:

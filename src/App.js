@@ -18,6 +18,7 @@ const dummyData = JSON.parse(
 );
 
 function App() {
+// 메인화면 gpt api
 const [data, setData] = useState(dummyData);
 const [isLoading, setIsLoading] = useState(false);
 const [messageApi, contextHolder] = message.useMessage();
@@ -53,7 +54,6 @@ const [messageApi, contextHolder] = message.useMessage();
         <Button4><button id="b4">나의 운동 일지</button></Button4>
         <Button5><button id="b5">사용자 정보</button></Button5>
       </Menu>
-
 
     <AppContainer>
       {contextHolder}
