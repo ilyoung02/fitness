@@ -4,11 +4,12 @@
     border-radius: 10px;
     position: 15% 100px;
 }
-#Lbtn2 {
+#signup {
     width: 80px;
     background-color: #FFFFFF;
     border-radius: 10px;
     position: 15% 100px;
+    margin-right: 5px;
 }
 #last {
     text-align: right;
@@ -29,9 +30,10 @@
 }
 
 #loginbtn {
-    width: 65px;
+    width: 95px;
     background-color: white;
-    border-radius: 15px;
+    border: 3px solid black;
+    border-radius: 35px;
     font-size: 15px;
     font-weight: bold;
 }

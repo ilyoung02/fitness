@@ -10,6 +10,7 @@ import {
     BellFilled,
   } from '@ant-design/icons';
 import Modal from "react-modal";
+import Modal2 from "react-modal";
 import './Menu.css';
 
 function Menu() {
@@ -24,17 +25,25 @@ const closeModal = () => {
   setIsOpen(false);
 };
 
+const openModal2 = () => {
+    setIsOpen(true);
+  };
+  
+  const closeModal2 = () => {
+    setIsOpen(false);
+  };
+
 const ModalStyles = {
     overlay: {
-        backgroundColor: "rgba(0, 0, 0, 0.5)",
+        backgroundColor: "rgba(0, 0, 0, 0.7)",
     },
     content: {
         width: "270px",
         height: "400px",
         margin: "auto",
-        borderRadius: "10px",
+        borderRadius: "20px",
         boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
-        padding: "20px",
+        padding: "30px",
     },
 };
 
@@ -81,7 +90,7 @@ const loginHandler = () => {
                     </tr>
                     <tr>
                         <td id="last" colSpan={2}>
-                            <button id="Lbtn2" onClick={openModal}>회원가입</button>
+                            <button id="signup" onClick={openModal2}>회원가입</button>
                             <button id="Lbtn1" onClick={closeModal}>닫기</button>
                         </td>
                     </tr>
@@ -92,8 +101,8 @@ const loginHandler = () => {
 }
 
 export const MenuContainer = styled.div`
-    border: 2px solid #b0e0e6;
-    background-color: #e0ffff;
+    border-bottom: 3px solid black;
+    background-color: white;
     padding: 20px;
     display: flex;
     color: black;
@@ -109,6 +118,7 @@ export const Title = styled.div`
     width: 70%;
     Text-align: center;
     font-size: 30px;
+    font-weight: bold;
 `;
 
 export default Menu;

@@ -9,7 +9,7 @@ import banner from "./assets/banner.jpg"
 
 const dummyData = JSON.parse(
   `{
-    "title": "[맞춤형 AI 피트니스 챌린지]",
+    "title": "[Health Buddy]",
     "thumbnail": "https://source.unsplash.com/1600x900/?fitness,gym,challenge",
     "summary": "신체 요약",
     "physical_result": "신체 평가",
@@ -60,7 +60,7 @@ const [messageApi, contextHolder] = message.useMessage();
         <img id="banner" src={banner}></img>
       </AppContainer2>
 
-      <AppContainer3>
+      <AppContainer3 id="gptinput">
         {contextHolder}
         <AppTitle>
           Health Buddy
@@ -80,16 +80,6 @@ const [messageApi, contextHolder] = message.useMessage();
 
 export default App;
 
-const Menu = styled.div`
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  Text-align: center;
-  font-size: 40px;
-  background-color: #696969;
-  width: 10%;
-`;
-
 const AppContainer = styled.div`
   padding: 20px;
   display: block-inline;
@@ -97,12 +87,11 @@ const AppContainer = styled.div`
 `;
 
 const AppContainer2 = styled.div`
-  padding: 20px;
+  padding: 20px 40px;
   display: flex;
   align: center;
   flex-direction: column;
   margin: 0 auto;
-  width: 90%
 `;
 
 const AppContainer3 = styled.div`
@@ -110,7 +99,7 @@ const AppContainer3 = styled.div`
   display: flex;
   align: center;
   flex-direction: column;
-  max-width: 650px;
+  max-width: 850px;
   margin: 0 auto;
   width: 80%
 `;
