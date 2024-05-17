@@ -6,8 +6,11 @@ import {
     HomeOutlined,
     SettingFilled,
     MenuOutlined,
+    BellOutlined,
+    BellFilled,
   } from '@ant-design/icons';
 import Modal from "react-modal";
+import './Menu.css';
 
 function Menu() {
 // 로그인 팝업창
@@ -26,7 +29,7 @@ const ModalStyles = {
         backgroundColor: "rgba(0, 0, 0, 0.5)",
     },
     content: {
-        width: "300px",
+        width: "270px",
         height: "400px",
         margin: "auto",
         borderRadius: "10px",
@@ -46,7 +49,6 @@ const loginHandler = () => {
 };
 */
 
-
     return (
         <MenuContainer>
             <LogoImage>
@@ -57,27 +59,45 @@ const loginHandler = () => {
             Health Buddy
             </Title>
 
-            <SettingFilled type="button" onClick={openModal}></SettingFilled>
+            <BellOutlined id="Bell" type="button"/>
+            <button id="loginbtn" type="button" onClick={openModal}>로그인</button>
             <Modal isOpen={isOpen} onRequestClose={closeModal} style={ModalStyles}>
                 <h1>로그인</h1>
                 <h3>아이디, 비밀번호를 입력하세요!</h3>
-                
-                <button id="Lbtn" onClick={closeModal}>닫기</button>
+                <table id="loginT">
+                    <tr>
+                        <th>아이디</th>
+                        <td><input id="id" type="text"></input></td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호</th>
+                        <input id="pw" type="password"></input>
+                    </tr>
+                    <tr id="idsave">
+                        <td colSpan={2}><input id="checkbox" type="checkbox"></input><ins>아이디 저장</ins></td>
+                    </tr>
+                    <tr>
+                        <td><br/><br/><br/><br/><br/><br/><br/></td>
+                    </tr>
+                    <tr>
+                        <td id="last" colSpan={2}>
+                            <button id="Lbtn2" onClick={openModal}>회원가입</button>
+                            <button id="Lbtn1" onClick={closeModal}>닫기</button>
+                        </td>
+                    </tr>
+                </table>
             </Modal>
         </MenuContainer>
       );
 }
 
-export const button = styled.div`
-    width: 50px;
-    background-color: #FFFFFF;
-`;
-
 export const MenuContainer = styled.div`
-    background-color: #696969;
+    border: 2px solid #b0e0e6;
+    background-color: #e0ffff;
     padding: 20px;
     display: flex;
-    color: white;
+    color: black;
+    text-align: center;
 `;
 export const LogoImage = styled.div`
     margin-left: 20px;
@@ -88,7 +108,7 @@ export const Title = styled.div`
     margin-left: 20px;
     width: 70%;
     Text-align: center;
-    font-size: 25px;
+    font-size: 30px;
 `;
 
 export default Menu;

@@ -5,6 +5,7 @@ import styled from "styled-components";
 import FitnessDiplay from "./Components/FitnessDiplay";
 import { message } from "antd";
 import './App.css';
+import banner from "./assets/banner.jpg"
 
 const dummyData = JSON.parse(
   `{
@@ -46,29 +47,33 @@ const [messageApi, contextHolder] = message.useMessage();
   }
 
   return (
-    <section>
-      <Menu>
-        <Button1><button id="b1">추천 영상</button></Button1>
-        <Button2><button id="b2">피트니스 챌린지</button></Button2>
-        <Button3><button id="b3">커뮤니티</button></Button3>
-        <Button4><button id="b4">나의 운동 일지</button></Button4>
-        <Button5><button id="b5">사용자 정보</button></Button5>
-      </Menu>
+    <section id="main">
+      <AppContainer>
+        <button id="clist">챌린지 리스트</button>
+        <button id="create">챌린지 생성</button>
+        <button id="recommend">추천 챌린지</button>
+        <button id="mychall">마이 챌린지</button>
+        <button id="SNS">자유 게시판</button>
+      </AppContainer>
 
-    <AppContainer>
-      {contextHolder}
-      <AppTitle>
-      다이어트는 오늘부터
-      </AppTitle>
-      <StatusInput
-        messageApi={messageApi}
-        isLoading={isLoading}
-        onSubmit={handleSubmit}
-      />
-      
-      <FitnessDiplay isLoading={isLoading} data={data}/>
-    </AppContainer>
-      
+      <AppContainer2>
+        <img id="banner" src={banner}></img>
+      </AppContainer2>
+
+      <AppContainer3>
+        {contextHolder}
+        <AppTitle>
+          Health Buddy
+        </AppTitle>
+
+        <StatusInput
+          messageApi={messageApi}
+          isLoading={isLoading}
+          onSubmit={handleSubmit}
+        />
+
+        <FitnessDiplay isLoading={isLoading} data={data}/>
+      </AppContainer3>
     </section>
   );
 }
@@ -85,23 +90,22 @@ const Menu = styled.div`
   width: 10%;
 `;
 
-const Button1 = styled.div`
-
-`;
-const Button2 = styled.div`
-
-`;
-const Button3 = styled.div`
-
-`;
-const Button4 = styled.div`
-
-`;
-const Button5 = styled.div`
-
-`;
-
 const AppContainer = styled.div`
+  padding: 20px;
+  display: block-inline;
+  text-align: center;
+`;
+
+const AppContainer2 = styled.div`
+  padding: 20px;
+  display: flex;
+  align: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%
+`;
+
+const AppContainer3 = styled.div`
   padding: 20px;
   display: flex;
   align: center;
@@ -117,8 +121,8 @@ const AppContainer = styled.div`
 const AppTitle = styled.div`
   margin-left: 10px;
   font-weight: 400;
-  font-size: 45px;
+  font-size: 40px;
   text-align: center;
   font-family: "Noto Serif KR";
-  color: white;
+  color: black;
 `;

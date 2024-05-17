@@ -1,0 +1,37 @@
+#Lbtn1 {
+    width: 50px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    position: 15% 100px;
+}
+#Lbtn2 {
+    width: 80px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    position: 15% 100px;
+}
+#last {
+    text-align: right;
+}
+#idsave {
+    margin-left: 30px;
+    text-align: left;
+    font-size: 12px;
+}
+#checkbox {
+    width: 11px;
+    height: 12px;
+}
+
+#Bell {
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+#loginbtn {
+    width: 65px;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
