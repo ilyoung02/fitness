@@ -98,7 +98,7 @@ const ModalStyles = {
         <button id="recommend"><a id="link" href="Recommend">추천 챌린지</a></button>
         <button id="mychall"><a id="link" href="Mychall">마이 챌린지</a></button>
         <button id="SNS"><a id="link" href="SNS">커뮤니티</a></button>
-        <button id="home"><a id="link" href="/">홈</a></button>
+        <button id="home"><a id="link" href="Main">홈</a></button>
         <br/><br/>
         <BrowserRouter>
           <Routes>
