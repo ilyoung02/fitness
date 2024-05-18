@@ -36,12 +36,12 @@ const ModalStyles = {
         backgroundColor: "rgba(0, 0, 0, 0.7)",
     },
     content: {
-        width: "320px",
-        height: "450px",
+        width: "337px",
+        height: "430px",
         margin: "auto",
         borderRadius: "20px",
         boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
-        padding: "30px",
+        padding: "10px 10px 25px 20px",
     },
 };
 
@@ -64,13 +64,14 @@ const ModalStyles = {
                 <h3>아이디, 비밀번호를 입력하세요!</h3>
                 <table id="loginT">
                     <tr>
-                        <th>아이디</th>
+                        <th colSpan={1}>아이디</th>
                         <td colSpan={2}><input id="id" type="text"></input></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <th>비밀번호</th>
+                        <th colSpan={1}>비밀번호</th>
                         <td colSpan={2}><input id="pw" type="password"></input></td>
+                        <td></td>
                         <td></td>
                     </tr>
                     <tr id="idsave">
@@ -112,7 +113,7 @@ const ModalStyles = {
         <button id="recommend"><a id="link" href="Recommend">추천 챌린지</a></button>
         <button id="mychall"><a id="link" href="Mychall">마이 챌린지</a></button>
         <button id="SNS"><a id="link" href="SNS">커뮤니티</a></button>
-        <br/><br/>
+        <br/>
         <hr id="hr"/>
         <BrowserRouter>
           <Routes>
@@ -151,7 +152,7 @@ const AppContainer = styled.div`
 export const MenuContainer = styled.div`
     border-bottom: 3px solid black;
     background-color: white;
-    padding: 15px;
+    padding: 8px;
     display: flex;
     color: black;
     text-align: center;
