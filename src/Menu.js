@@ -13,7 +13,6 @@ import Modal from "react-modal";
 import Modal2 from "react-modal";
 import './Menu.css';
 import { BrowserRouter, Route, Routes} from "react-router-dom";
-import Main from "./Main";
 
 function Menu() {
 // 로그인 팝업창
@@ -49,7 +48,7 @@ const ModalStyles = {
     return (
         <MenuContainer>
                 <LogoImage>
-                <a href="/Main"><img width={"80px"} src={logo}></img></a>
+                <a href="/"><img width={"80px"} src={logo}></img></a>
                 </LogoImage>
 
             <Title>
