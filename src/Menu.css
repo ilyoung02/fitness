@@ -24,8 +24,11 @@
     height: 12px;
 }
 
+#notice {
+    color: black;
+}
 #Bell {
-    font-size: 30px;
+    font-size: 40px;
     margin-right: 5px;
 }
 

@@ -20,6 +20,7 @@ import Mychall from "./MyChall/Mychall"
 import Recommend from "./RecommendChall/Recommend";
 import SNS from "./SNS/SNS";
 import Main from "./Main";
+import notice from "./notice/notice";
 
 function Menu() {
 // 로그인 팝업창
@@ -64,7 +65,8 @@ const ModalStyles = {
                     Health Buddy
                 </Title>
 
-            <BellOutlined id="Bell" type="button"/>
+            <a id="notice" href="/notice"><BellOutlined id="Bell" type="button"/></a>
+
             <button id="loginbtn" type="button" onClick={openModal}>로그인</button>
             <Modal isOpen={isOpen} onRequestClose={closeModal} style={ModalStyles}>
                 <h1>로그인</h1>
