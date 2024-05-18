@@ -8,10 +8,8 @@ import {
     SettingFilled,
     MenuOutlined,
     BellOutlined,
-    BellFilled,
   } from '@ant-design/icons';
 import Modal from "react-modal";
-import Modal2 from "react-modal";
 import './Menu.css';
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 
@@ -33,27 +31,19 @@ const closeModal = () => {
   setIsOpen(false);
 };
 
-const openModal2 = () => {
-    setIsOpen(true);
-  };
-  const closeModal2 = () => {
-    setIsOpen(false);
-  };
-
 const ModalStyles = {
     overlay: {
         backgroundColor: "rgba(0, 0, 0, 0.7)",
     },
     content: {
-        width: "270px",
-        height: "400px",
+        width: "320px",
+        height: "450px",
         margin: "auto",
         borderRadius: "20px",
         boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
         padding: "30px",
     },
 };
-
 
     return (
         <AppContainer>
@@ -75,23 +65,43 @@ const ModalStyles = {
                 <table id="loginT">
                     <tr>
                         <th>아이디</th>
-                        <td><input id="id" type="text"></input></td>
+                        <td colSpan={2}><input id="id" type="text"></input></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <th>비밀번호</th>
-                        <input id="pw" type="password"></input>
+                        <td colSpan={2}><input id="pw" type="password"></input></td>
+                        <td></td>
                     </tr>
                     <tr id="idsave">
+                        <td></td>
                         <td colSpan={2}><input id="checkbox" type="checkbox"></input><ins>아이디 저장</ins></td>
                     </tr>
                     <tr>
-                        <td><br/><br/><br/><br/><br/><br/><br/></td>
+                        <td><br/></td>
                     </tr>
                     <tr>
-                        <td id="last" colSpan={2}>
-                            <button id="signup" onClick={openModal2}>회원가입</button>
-                            <button id="Lbtn1" onClick={closeModal}>닫기</button>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="submit" type="submit"></input></td>
+                    </tr>
+                    <tr>
+                        <td><br/><br/><br/><br/></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td id="last">
+                            <a href="/singup"><button id="signup">회원가입</button></a>
                         </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><button id="Lbtn1" onClick={closeModal}>닫기</button></td>
                     </tr>
                 </table>
             </Modal>
@@ -103,6 +113,7 @@ const ModalStyles = {
         <button id="mychall"><a id="link" href="Mychall">마이 챌린지</a></button>
         <button id="SNS"><a id="link" href="SNS">커뮤니티</a></button>
         <br/><br/>
+        <hr id="hr"/>
         <BrowserRouter>
           <Routes>
             <Route path="/Main" element={<Main />}>메인화면</Route>
