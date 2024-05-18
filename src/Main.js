@@ -6,13 +6,6 @@ import FitnessDiplay from "./Components/FitnessDiplay";
 import { message } from "antd";
 import './Main.css';
 import banner from "./assets/banner.jpg"
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
-
-import Clist from "./ChallengeList/Clist";
-import Create from "./ChallengeCreate/Create"
-import Mychall from "./MyChall/Mychall"
-import Recommend from "./RecommendChall/Recommend";
-import SNS from "./SNS/SNS";
 
 const dummyData = JSON.parse(
     `{
@@ -58,23 +51,6 @@ const [messageApi, contextHolder] = message.useMessage();
     // Route에는 해당 page의 경로 path
     // element에는 경로에 맞는 컴포넌트
     <section id="main">
-      <AppContainer>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/Clist" element={<Clist />}>챌린지 리스트</Route>
-            <Route path="/Create" element={<Create />}>챌린지 생성</Route>
-            <Route path="/Recommend" element={<Recommend />}>추천 챌린지</Route>
-            <Route path="/Mychall" element={<Mychall />}>마이 챌린지</Route>
-            <Route path="/SNS" element={<SNS />}>커뮤니티</Route>
-          </Routes>
-        </BrowserRouter>
-        <button id="clist"><a id="link" href="Clist">챌린지 리스트</a></button>
-        <button id="create"><a id="link" href="Create">챌린지 생성</a></button>
-        <button id="recommend"><a id="link" href="Recommend">추천 챌린지</a></button>
-        <button id="mychall"><a id="link" href="Mychall">마이 챌린지</a></button>
-        <button id="SNS"><a id="link" href="SNS">커뮤니티</a></button>
-      </AppContainer>
-
       <AppContainer2>
         <img id="banner" src={banner}></img>
       </AppContainer2>
@@ -97,14 +73,7 @@ const [messageApi, contextHolder] = message.useMessage();
   );
 }
 
-
 export default Main;
-
-const AppContainer = styled.div`
-  padding: 20px;
-  display: block-inline;
-  text-align: center;
-`;
 
 const AppContainer2 = styled.div`
   padding: 20px 40px;

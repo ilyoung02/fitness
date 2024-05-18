@@ -14,6 +14,13 @@ import Modal2 from "react-modal";
 import './Menu.css';
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 
+import Clist from "./ChallengeList/Clist";
+import Create from "./ChallengeCreate/Create"
+import Mychall from "./MyChall/Mychall"
+import Recommend from "./RecommendChall/Recommend";
+import SNS from "./SNS/SNS";
+import Main from "./Main";
+
 function Menu() {
 // 로그인 팝업창
 const [isOpen, setIsOpen] = useState(false);
@@ -45,15 +52,17 @@ const ModalStyles = {
     },
 };
 
+
     return (
-        <MenuContainer>
+        <AppContainer>
+            <MenuContainer>
                 <LogoImage>
                 <a href="/"><img width={"80px"} src={logo}></img></a>
                 </LogoImage>
 
-            <Title>
-            Health Buddy
-            </Title>
+                <Title>
+                    Health Buddy
+                </Title>
 
             <BellOutlined id="Bell" type="button"/>
             <button id="loginbtn" type="button" onClick={openModal}>로그인</button>
@@ -84,8 +93,31 @@ const ModalStyles = {
                 </table>
             </Modal>
         </MenuContainer>
+        <button id="clist"><a id="link" href="Clist">챌린지 리스트</a></button>
+        <button id="create"><a id="link" href="Create">챌린지 생성</a></button>
+        <button id="recommend"><a id="link" href="Recommend">추천 챌린지</a></button>
+        <button id="mychall"><a id="link" href="Mychall">마이 챌린지</a></button>
+        <button id="SNS"><a id="link" href="SNS">커뮤니티</a></button>
+        <button id="home"><a id="link" href="/">홈</a></button>
+        <br/><br/>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/Main" element={<Main />}>메인화면</Route>
+            <Route path="/Clist" element={<Clist />}>챌린지 리스트</Route>
+            <Route path="/Create" element={<Create />}>챌린지 생성</Route>
+            <Route path="/Recommend" element={<Recommend />}>추천 챌린지</Route>
+            <Route path="/Mychall" element={<Mychall />}>마이 챌린지</Route>
+            <Route path="/SNS" element={<SNS />}>커뮤니티</Route>
+          </Routes>
+        </BrowserRouter>
+        </AppContainer>
       );
 }
+
+const AppContainer = styled.div`
+  display: block-inline;
+  text-align: center;
+`;
 
 export const MenuContainer = styled.div`
     border-bottom: 3px solid black;
