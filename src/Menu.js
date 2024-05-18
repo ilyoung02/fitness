@@ -12,15 +12,14 @@ import {
 import Modal from "react-modal";
 import Modal2 from "react-modal";
 import './Menu.css';
+import { useNavigate } from "react-router-dom";
 
 function Menu() {
 // 로그인 팝업창
 const [isOpen, setIsOpen] = useState(false);
-
 const openModal = () => {
   setIsOpen(true);
 };
-
 const closeModal = () => {
   setIsOpen(false);
 };
@@ -28,7 +27,6 @@ const closeModal = () => {
 const openModal2 = () => {
     setIsOpen(true);
   };
-  
   const closeModal2 = () => {
     setIsOpen(false);
   };
@@ -46,17 +44,6 @@ const ModalStyles = {
         padding: "30px",
     },
 };
-
-/* 카카오 로그인
-const KLogin = () => {
-    const REST_API_KEY = ``;
-    const REDIRECT_URI = '';
-    const link = 'https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code'
-}
-const loginHandler = () => {
-    window.location.href = link;
-};
-*/
 
     return (
         <MenuContainer>
