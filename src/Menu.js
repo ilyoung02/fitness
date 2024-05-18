@@ -95,12 +95,12 @@ const ModalStyles = {
                 </table>
             </Modal>
         </MenuContainer>
+        <button id="home"><a id="link" href="Main">홈</a></button>
         <button id="clist"><a id="link" href="Clist">챌린지 리스트</a></button>
         <button id="create"><a id="link" href="Create">챌린지 생성</a></button>
         <button id="recommend"><a id="link" href="Recommend">추천 챌린지</a></button>
         <button id="mychall"><a id="link" href="Mychall">마이 챌린지</a></button>
         <button id="SNS"><a id="link" href="SNS">커뮤니티</a></button>
-        <button id="home"><a id="link" href="Main">홈</a></button>
         <br/><br/>
         <BrowserRouter>
           <Routes>
