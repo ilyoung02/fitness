@@ -4,7 +4,7 @@ import StatusInput from "./Components/StatusInput";
 import styled from "styled-components";
 import FitnessDiplay from "./Components/FitnessDiplay";
 import { message } from "antd";
-import './App.css';
+import './Main.css';
 import banner from "./assets/banner.jpg"
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import Clist from "./ChallengeList/Clist";
@@ -49,6 +49,9 @@ const [messageApi, contextHolder] = message.useMessage();
   }
 
   return (
+    // Routes 밖에 있는 요소들은 항상 화면에 표시
+    // Route에는 해당 page의 경로 path
+    // element에는 경로에 맞는 컴포넌트
     <section id="main">
       <AppContainer>
         <BrowserRouter>
