@@ -67,8 +67,8 @@ const ModalStyles = {
                 </Title>
 
             <a id="notice" href="/notice"><BellOutlined id="Bell" type="button"/></a>
-
             <button id="loginbtn" type="button" onClick={openModal}>로그인</button>
+
             <Modal isOpen={isOpen} onRequestClose={closeModal} style={ModalStyles}>
                 <h1>로그인</h1>
                 <h3>아이디, 비밀번호를 입력하세요!</h3>
@@ -113,7 +113,7 @@ const ModalStyles = {
             <Route path="/SNS" element={<SNS />}>커뮤니티</Route>
           </Routes>
         </BrowserRouter>
-        <br/><br/><br/><br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
         <div id="t">
             <br/>
             <span id="t1">팀장</span><span> : 김채윤</span>
@@ -139,15 +139,17 @@ const AppContainer = styled.div`
 export const MenuContainer = styled.div`
     border-bottom: 3px solid black;
     background-color: white;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     color: black;
     text-align: center;
 `;
+
 export const LogoImage = styled.div`
     margin-left: 20px;
     width: 15%;
 `;
+
 export const Title = styled.div`
     margin-top: 4px;
     margin-left: 20px;
