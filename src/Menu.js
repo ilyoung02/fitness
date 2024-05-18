@@ -48,14 +48,9 @@ const ModalStyles = {
 
     return (
         <MenuContainer>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/Main" element={<Main />} />
-                </Routes>
                 <LogoImage>
-                    <a><img width={"80px"} src={logo}></img></a>
+                <a href="/Main"><img width={"80px"} src={logo}></img></a>
                 </LogoImage>
-            </BrowserRouter>
 
             <Title>
             Health Buddy
