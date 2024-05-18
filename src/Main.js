@@ -48,19 +48,11 @@ const [messageApi, contextHolder] = message.useMessage();
     handleClickAPICall(userInput);
   }
 
-  const navigate = useNavigate();
-  const goToClist = () => {
-    navigate('/Clist');
-  }
-  const goToCreate = () => {
-    navigate('/Create');
-  }
-
   return (
     <section id="main">
       <AppContainer>
-        <button id="clist" onClick={goToClist}>챌린지 리스트</button>
-        <button id="create" onClick={goToCreate}>챌린지 생성</button>
+        <button id="clist">챌린지 리스트</button>
+        <button id="create">챌린지 생성</button>
         <button id="recommend">추천 챌린지</button>
         <button id="mychall">마이 챌린지</button>
         <button id="SNS">자유 게시판</button>
