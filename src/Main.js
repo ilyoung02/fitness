@@ -6,7 +6,7 @@ import FitnessDiplay from "./Components/FitnessDiplay";
 import { message } from "antd";
 import './App.css';
 import banner from "./assets/banner.jpg"
-import { useNavigate } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import Clist from "./ChallengeList/Clist";
 
 const dummyData = JSON.parse(
@@ -51,11 +51,20 @@ const [messageApi, contextHolder] = message.useMessage();
   return (
     <section id="main">
       <AppContainer>
-        <button id="clist">챌린지 리스트</button>
-        <button id="create">챌린지 생성</button>
-        <button id="recommend">추천 챌린지</button>
-        <button id="mychall">마이 챌린지</button>
-        <button id="SNS">자유 게시판</button>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/Clist" element={<Clist />}>챌린지 리스트</Route>
+            <Route path="/Create" element={<Clist />}>챌린지 생성</Route>
+            <Route path="/Recommend" element={<Clist />}>추천 챌린지</Route>
+            <Route path="/Mychall" element={<Clist />}>마이 챌린지</Route>
+            <Route path="/SNS" element={<Clist />}>커뮤니티</Route>
+          </Routes>
+        </BrowserRouter>
+        <a id="clist" href="Clist">챌린지 리스트</a>
+        <a id="create" href="Create">챌린지 생성</a>
+        <a id="recommend" href="Recommend">추천 챌린지</a>
+        <a id="mychall" href="Mychall">마이 챌린지</a>
+        <a id="SNS" href="SNS">커뮤니티</a>
       </AppContainer>
 
       <AppContainer2>

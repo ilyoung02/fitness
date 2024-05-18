@@ -1,9 +1,9 @@
 import React from "react";
-import styled from "styled-components";
-import Clist from "./ChallengeList/Clist";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
 
+//라우터 URL 경로
 function App() {
 }
+
 
 export default App;
