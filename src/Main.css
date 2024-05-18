@@ -80,6 +80,7 @@ section {
 
 #link {
     text-decoration: none;
+    color: black;
 }
 
 #gptinput {
