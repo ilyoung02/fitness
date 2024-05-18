@@ -57,7 +57,7 @@ const ModalStyles = {
         <AppContainer>
             <MenuContainer>
                 <LogoImage>
-                <a href="/"><img width={"80px"} src={logo}></img></a>
+                <a href="/Main"><img width={"80px"} src={logo}></img></a>
                 </LogoImage>
 
                 <Title>
