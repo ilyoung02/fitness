@@ -12,7 +12,8 @@ import {
 import Modal from "react-modal";
 import Modal2 from "react-modal";
 import './Menu.css';
-import { useNavigate } from "react-router-dom";
+import { BrowserRouter, Route, Routes} from "react-router-dom";
+import Main from "./Main";
 
 function Menu() {
 // 로그인 팝업창
@@ -47,9 +48,14 @@ const ModalStyles = {
 
     return (
         <MenuContainer>
-            <LogoImage>
-            <img width={"80px"} src={logo}></img>
-            </LogoImage>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/Main" element={<Main />} />
+                </Routes>
+                <LogoImage>
+                    <a><img width={"80px"} src={logo}></img></a>
+                </LogoImage>
+            </BrowserRouter>
 
             <Title>
             Health Buddy

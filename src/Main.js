@@ -7,7 +7,12 @@ import { message } from "antd";
 import './Main.css';
 import banner from "./assets/banner.jpg"
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+
 import Clist from "./ChallengeList/Clist";
+import Create from "./ChallengeCreate/Create"
+import Mychall from "./MyChall/Mychall"
+import Recommend from "./RecommendChall/Recommend";
+import SNS from "./SNS/SNS";
 
 const dummyData = JSON.parse(
     `{
@@ -57,10 +62,10 @@ const [messageApi, contextHolder] = message.useMessage();
         <BrowserRouter>
           <Routes>
             <Route path="/Clist" element={<Clist />}>챌린지 리스트</Route>
-            <Route path="/Create" element={<Clist />}>챌린지 생성</Route>
-            <Route path="/Recommend" element={<Clist />}>추천 챌린지</Route>
-            <Route path="/Mychall" element={<Clist />}>마이 챌린지</Route>
-            <Route path="/SNS" element={<Clist />}>커뮤니티</Route>
+            <Route path="/Create" element={<Create />}>챌린지 생성</Route>
+            <Route path="/Recommend" element={<Recommend />}>추천 챌린지</Route>
+            <Route path="/Mychall" element={<Mychall />}>마이 챌린지</Route>
+            <Route path="/SNS" element={<SNS />}>커뮤니티</Route>
           </Routes>
         </BrowserRouter>
         <a id="clist" href="Clist">챌린지 리스트</a>
