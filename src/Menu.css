@@ -24,10 +24,8 @@
     height: 12px;
 }
 
-#notice {
-    color: black;
-}
 #Bell {
+    color: black;
     font-size: 40px;
     margin-right: 10px;
 }
@@ -53,6 +51,7 @@
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+    background-image: linear-gradient(30deg, #e0ffff, #e6e6fa);
 }
 #create {
     margin-top: 30px;
@@ -66,6 +65,7 @@
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+    background-image: linear-gradient(30deg, #e0ffff, #e6e6fa);
 }
 #recommend {
     margin-top: 30px;
@@ -79,6 +79,7 @@
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+    background-image: linear-gradient(30deg, #e0ffff, #e6e6fa);
 }
 #mychall {
     margin-top: 30px;
@@ -92,6 +93,7 @@
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+    background-image: linear-gradient(30deg, #e0ffff, #e6e6fa);
 }
 #SNS {
     margin-right: 30px;
@@ -105,6 +107,7 @@
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+    background-image: linear-gradient(30deg, #e0ffff, #e6e6fa);
 }
 #home {
     margin-right: 30px;
@@ -118,6 +121,7 @@
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+    background-image: linear-gradient(30deg, #e0ffff, #e6e6fa);
 }
 
 #t {

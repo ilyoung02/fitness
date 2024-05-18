@@ -62,7 +62,7 @@ const ModalStyles = {
                 <a href="/Main"><img width={"80px"} src={logo}></img></a>
                 </LogoImage>
 
-                <Title>
+                <Title id="deco">
                     Health Buddy
                 </Title>
 
@@ -111,6 +111,7 @@ const ModalStyles = {
             <Route path="/Recommend" element={<Recommend />}>추천 챌린지</Route>
             <Route path="/Mychall" element={<Mychall />}>마이 챌린지</Route>
             <Route path="/SNS" element={<SNS />}>커뮤니티</Route>
+            <Route path="/notice" element={<notice />}>알림</Route>
           </Routes>
         </BrowserRouter>
         <br/><br/><br/><br/><br/>
@@ -143,6 +144,7 @@ export const MenuContainer = styled.div`
     display: flex;
     color: black;
     text-align: center;
+    background-image: linear-gradient(85deg, #e0ffff, #e6e6fa);
 `;
 
 export const LogoImage = styled.div`
@@ -151,7 +153,6 @@ export const LogoImage = styled.div`
 `;
 
 export const Title = styled.div`
-    margin-top: 4px;
     margin-left: 20px;
     width: 70%;
     Text-align: center;
