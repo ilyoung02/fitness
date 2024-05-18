@@ -58,7 +58,7 @@ const [messageApi, contextHolder] = message.useMessage();
       <AppContainer3 id="gptinput">
         {contextHolder}
         <AppTitle>
-          Health Buddy
+          무엇이든 물어보세요!
         </AppTitle>
 
         <StatusInput

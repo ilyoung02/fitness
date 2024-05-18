@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import styled from "styled-components";
 import logo from "./assets/muscles-369784_1920.png"
+import logo2 from "./assets/yeongnam.jpg"
 import {
     HomeOutlined,
     SettingFilled,
@@ -112,6 +113,20 @@ const ModalStyles = {
             <Route path="/SNS" element={<SNS />}>커뮤니티</Route>
           </Routes>
         </BrowserRouter>
+        <br/><br/><br/><br/><br/><br/><br/><br/>
+        <div id="t">
+            <br/>
+            <span id="t1">팀장</span><span> : 김채윤</span>
+            <br/><br/> 
+            <span id="t2">팀원</span><span> : 방일영 박대근 이상윤 이동혁</span>
+            <br/><br/>
+            <img width={320} src={logo2}></img>
+            <p>경산캠퍼스 우) 38541 경상북도 경산시 대학로 280</p>
+            <p>대구캠퍼스 우) 42415 대구광역시 남구 현충로 170</p>
+            <p>원격교육지원센터 TEL. 053) 810-1959 / FAX 053-810-2038 / EMAIL dge@yu.ac.kr</p>
+            <p>Copyright ⓒ 2021 Yeungnam University. All Rights Reserved.</p>
+            <br/>
+        </div>
         </AppContainer>
       );
 }

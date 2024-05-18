@@ -119,3 +119,21 @@
     font-weight: bold;
     text-decoration: none;
 }
+
+#t {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#t1 {
+    color: red;
+}
+#t2 {
+    color: blue;
+}
+
+p {
+    font-size: 15px;
+}
