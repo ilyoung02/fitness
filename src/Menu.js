@@ -114,7 +114,6 @@ const ModalStyles = {
         <button id="mychall"><a id="link" href="Mychall">마이 챌린지</a></button>
         <button id="SNS"><a id="link" href="SNS">커뮤니티</a></button>
         <br/>
-        <hr id="hr"/>
         <BrowserRouter>
           <Routes>
             <Route path="/Main" element={<Main />}>메인화면</Route>
@@ -150,9 +149,8 @@ const AppContainer = styled.div`
 `;
 
 export const MenuContainer = styled.div`
-    border-bottom: 3px solid black;
     background-color: white;
-    padding: 8px;
+    padding: 25px;
     display: flex;
     color: black;
     text-align: center;
