@@ -67,17 +67,16 @@ const ModalStyles = {
             <button id="loginbtn" type="button" onClick={openModal}>로그인</button>
 
             <Modal isOpen={isOpen} onRequestClose={closeModal} style={ModalStyles}>
-                <h1>로그인</h1>
-                <h3>아이디, 비밀번호를 입력하세요!</h3>
+                <h1>Login</h1>
                 <form method="GET">
                 <table id="loginT">
                     <tr>
-                        <th colSpan={1}>아이디</th>
+                        <th colSpan={1}>ID</th>
                         <td colSpan={2}><input id="id" type="text"></input></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <th colSpan={1}>비밀번호</th>
+                        <th colSpan={1}>PW</th>
                         <td colSpan={2}><input id="pw" type="password"></input></td>
                         <td></td>
                         <td></td>
