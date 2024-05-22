@@ -4,9 +4,7 @@ import styled from "styled-components";
 function Signup() {
     return (
         <AppContainer>
-            <div>
-                ㅎㅇ
-            </div>
+            <h1>회원가입</h1>
         </AppContainer>
     )
 }
@@ -14,7 +12,4 @@ function Signup() {
 export default Signup;
 
 export const AppContainer = styled.div`
-    width: 500px;
-    height: 700px;
-    border: 3px solid;
 `;

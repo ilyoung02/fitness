@@ -4,7 +4,9 @@ import styled from "styled-components";
 function notice() {
     return (
         <AppContainer>
-            
+            <div>
+              gd
+            </div>
         </AppContainer>
     )
 }

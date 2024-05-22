@@ -21,6 +21,7 @@ import SNS from "./SNS/SNS";
 import Main from "./Main";
 import notice from "./notice/notice";
 import Signup from "./Signup/Signup";
+import Login from "./Login/Login";
 
 function Menu() {
 // 로그인 팝업창
@@ -53,11 +54,16 @@ const ModalStyles = {
                 <a href="/Main"><img width={"80px"} src={logo}></img></a>
                 </LogoImage>
 
-                <Title id="deco">
+                <Title>
                     Health Buddy
                 </Title>
 
-            <a id="notice" href="/notice"><BellOutlined id="Bell" type="button"/></a>
+            <a id="notice" href="notice"><BellOutlined id="Bell" type="button"/></a>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/notice" element={<notice />}>알림</Route>
+                </Routes>
+            </BrowserRouter>
             <button id="loginbtn" type="button" onClick={openModal}>로그인</button>
 
             <Modal isOpen={isOpen} onRequestClose={closeModal} style={ModalStyles}>
@@ -130,12 +136,11 @@ const ModalStyles = {
             <Route path="/Recommend" element={<Recommend />}>추천 챌린지</Route>
             <Route path="/Mychall" element={<Mychall />}>마이 챌린지</Route>
             <Route path="/SNS" element={<SNS />}>커뮤니티</Route>
-            <Route path="/notice" element={<notice />}>알림</Route>
           </Routes>
         </BrowserRouter>
 
         <br/><br/><br/><br/><br/>
-        
+
         <div id="t">
             <br/>
             <span id="t1">팀장</span><span> : 김채윤</span>
