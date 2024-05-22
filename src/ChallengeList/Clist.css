@@ -36,3 +36,109 @@
 #d1 {
     background-color: red;
 }
+
+#b1 {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin-top: 10px;
+    margin-right: 20px;
+    border: solid black;
+    border-radius: 7px;
+}
+#b2 {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin-top: 10px;
+    margin-right: 20px;
+    border: solid black;
+    border-radius: 7px;
+}
+#b3 {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin-top: 10px;
+    margin-right: 20px;
+    border: solid black;
+    border-radius: 7px;
+}
+#b4 {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin-top: 10px;
+    margin-right: 20px;
+    border: solid black;
+    border-radius: 7px;
+}
+#b5 {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin-top: 10px;
+    border: solid black;
+    border-radius: 7px;
+}
+#b6 {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin-top: 10px;
+    margin-right: 20px;
+    border: solid black;
+    border-radius: 7px;
+}
+#b7 {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin-top: 10px;
+    margin-right: 20px;
+    border: solid black;
+    border-radius: 7px;
+}
+#b8 {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin-top: 10px;
+    margin-right: 20px;
+    border: solid black;
+    border-radius: 7px;
+}
+#b9 {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin-top: 10px;
+    margin-right: 20px;
+    border: solid black;
+    border-radius: 7px;
+}
+#b10 {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin-top: 10px;
+    border: solid black;
+    border-radius: 7px;
+}
+
+#search-input {
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid;
+    width: 250px;
+    text-align: center;
+}
+
+#searchicon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+hr {
+    border: 1px solid;
+}

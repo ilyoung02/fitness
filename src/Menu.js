@@ -20,6 +20,7 @@ import Recommend from "./RecommendChall/Recommend";
 import SNS from "./SNS/SNS";
 import Main from "./Main";
 import notice from "./notice/notice";
+import Signup from "./Signup/Signup";
 
 function Menu() {
 // 로그인 팝업창
@@ -62,6 +63,7 @@ const ModalStyles = {
             <Modal isOpen={isOpen} onRequestClose={closeModal} style={ModalStyles}>
                 <h1>로그인</h1>
                 <h3>아이디, 비밀번호를 입력하세요!</h3>
+                <form method="GET">
                 <table id="loginT">
                     <tr>
                         <th colSpan={1}>아이디</th>
@@ -95,7 +97,12 @@ const ModalStyles = {
                         <td></td>
                         <td></td>
                         <td id="last">
-                            <a href="/singup"><button id="signup">회원가입</button></a>
+                            <button id="signup"><a id="link" href="Singup">회원가입</a></button>
+                            <BrowserRouter>
+                                <Routes>
+                                    <Route path="Signup" element={<Signup />}>회원가입</Route>
+                                </Routes>
+                            </BrowserRouter>
                         </td>
                     </tr>
                     <tr>
@@ -105,6 +112,7 @@ const ModalStyles = {
                         <td><button id="Lbtn1" onClick={closeModal}>닫기</button></td>
                     </tr>
                 </table>
+                </form>
             </Modal>
         </MenuContainer>
         <button id="home"><a id="link" href="Main">홈</a></button>
@@ -125,7 +133,9 @@ const ModalStyles = {
             <Route path="/notice" element={<notice />}>알림</Route>
           </Routes>
         </BrowserRouter>
+
         <br/><br/><br/><br/><br/>
+        
         <div id="t">
             <br/>
             <span id="t1">팀장</span><span> : 김채윤</span>

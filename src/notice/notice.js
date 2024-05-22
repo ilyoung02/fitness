@@ -1,9 +1,17 @@
 import React from "react";
+import styled from "styled-components";
 
 function notice() {
     return (
-        <div>알림입니다.</div>
+        <AppContainer>
+            
+        </AppContainer>
     )
 }
 
 export default notice;
+
+const AppContainer = styled.div`
+  display: block-inline;
+  text-align: center;
+`;

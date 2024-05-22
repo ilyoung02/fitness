@@ -11,10 +11,19 @@ import logo9 from "./fitnessicon/swim.png"
 import logo10 from "./fitnessicon/yoga.png"
 import styled from "styled-components";
 import './Clist.css';
+import {
+    SearchOutlined
+} from '@ant-design/icons';
 
 function Clist() {
     return (
         <ComponentContainer>
+            <hr id="tophr"/>
+            <br/>
+            <div class="search">
+                <SearchOutlined id="searchicon"></SearchOutlined>
+                <input id="search-input" placeholder="검색어를 입력하세요" />
+            </div>
             <img id="f1" width={70} src={logo1}></img>
             <img id="f2" width={70} src={logo2}></img>
             <img id="f3" width={70} src={logo3}></img>
@@ -26,7 +35,29 @@ function Clist() {
             <img id="f8" width={70} src={logo8}></img>
             <img id="f9" width={70} src={logo9}></img>
             <img id="f10"width={70} src={logo10}></img>
-            <br/><br/><br/>
+            <br/><br/>
+            <br/>
+            <button id="b1">
+            </button>
+            <button id="b2">
+            </button>
+            <button id="b3">
+            </button>
+            <button id="b4">
+            </button>
+            <button id="b5">
+            </button>
+            <br/>
+            <button id="b6">
+            </button>
+            <button id="b6">
+            </button>
+            <button id="b8">
+            </button>
+            <button id="b9">
+            </button>
+            <button id="b10">
+            </button>
         </ComponentContainer>
     )
 }
