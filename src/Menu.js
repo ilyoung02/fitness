@@ -14,7 +14,7 @@ import './Menu.css';
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 
 import Clist from "./ChallengeList/Clist";
-import Create from "./ChallengeCreate/Create"
+import Create from "./ChallengeCreate/createChall"
 import Mychall from "./MyChall/Mychall"
 import Recommend from "./RecommendChall/Recommend";
 import SNS from "./SNS/SNS";
@@ -38,7 +38,7 @@ const ModalStyles = {
         backgroundColor: "rgba(0, 0, 0, 0.7)",
     },
     content: {
-        width: "337px",
+        width: "500px",
         height: "430px",
         margin: "auto",
         borderRadius: "20px",
@@ -67,7 +67,7 @@ const ModalStyles = {
             <button id="loginbtn" type="button" onClick={openModal}>로그인</button>
 
             <Modal isOpen={isOpen} onRequestClose={closeModal} style={ModalStyles}>
-                <h1>Login</h1>
+                <h1 class ="text-center">Login</h1>
                 <form method="GET">
                 <table id="loginT">
                     <tr>

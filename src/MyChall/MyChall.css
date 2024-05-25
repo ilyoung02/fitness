@@ -1,0 +1,158 @@
+/* MyChall.css */
+
+/* 컨테이너 스타일 */
+.componentContainer {
+    padding: 20px;
+    text-align: center;
+}
+
+/* 챌린지 성공률 progress bar 스타일 */
+#progress {
+    width: 50%; /* 적당한 width로 설정 */
+    height: 20px; /* 높이를 조금 키워서 더 눈에 띄게 */
+    margin-top: 10px;
+    border-radius: 10px; /* 둥근 모서리 */
+    overflow: hidden; /* border-radius를 적용하기 위해 overflow hidden */
+    background-color: #e0e0e0; /* 배경색 설정 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+}
+
+#progress::-webkit-progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+}
+
+#progress::-webkit-progress-value {
+    background-color: #76c7c0; /* 진행 부분의 색상 */
+    border-radius: 10px 0 0 10px; /* 둥근 모서리 */
+}
+
+#progress::-moz-progress-bar {
+    background-color: #76c7c0;
+    border-radius: 10px 0 0 10px;
+}
+
+/* progress 텍스트 스타일 */
+.progress-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #76c7c0;
+    margin-left: 10px; /* progress bar와 텍스트 간격 조절 */
+}
+
+/* label 스타일 */
+label[for="progress"] {
+    font-size: 1.2em; /* 글씨 크기 조절 */
+    font-weight: bold; /* 글씨 굵기 조절 */
+    color: #333; /* 글씨 색상 조절 */
+    display: block; /* block 요소로 변환하여 줄 바꿈 */
+    margin-bottom: 10px; /* 아래 여백 추가 */
+}
+
+/* 갤러리 스타일 */
+.sub_photo {
+    margin-top: 20px;
+    
+}
+
+.title_area {
+    margin-bottom: 10px;
+}
+
+.hh_photo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* li 요소에 테두리 및 배경색 추가 */
+.sub_photo li {
+    width: auto;
+    height: auto;
+    border: 2px solid #000; /* 변경된 부분: 테두리 추가 */
+    padding: 20px; /* 변경된 부분: 내부 여백 추가 */
+    box-sizing: border-box; /* 변경된 부분: 박스 모델 수정 */
+    background-color: #f9f9f9; /* 변경된 부분: 배경색 추가 */
+}
+
+
+.blind {
+    display: none;
+}
+
+.sub_photo ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sub_photo li {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.thmb img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+}
+
+.tx_brief {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* 페이지 네이션 스타일 */
+.paginate {
+    margin-top: 20px;
+}
+
+.paginate a, .paginate strong {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+.paginate a.pre, .paginate a.next {
+    font-weight: bold;
+}
+
+
+/* Modal 스타일 */
+.modal-content {
+    text-align: center; /* 챌린지 후기 리스트 가운데 정렬 */
+}
+
+.default-image {
+    display: flex;
+    margin: 0 auto; /* 이미지 중앙 정렬 */
+    max-width: 100%; /* 최대 너비 설정 */
+    max-height: 400px; /* 최대 높이 설정 */
+    margin-top: 30px; /* 이미지 위 여백 추가 */
+    margin-bottom: 30px;
+    background-color: #dcedf0c2;
+}
+
+.comment-input {
+    display: block;
+    margin: 20px auto; /* 댓글 입력창 이미지 아래 여백 추가 */
+    width: 80%; /* 너비 조정 */
+    padding: 10px; /* 패딩 설정 */
+    border: 1px solid #ccc; /* 테두리 설정 */
+    border-radius: 5px; /* 테두리 둥글게 */
+    resize: vertical; /* 수직 리사이즈만 허용 */
+}
+
+.popup-close-btn {
+    position: absolute; /* 절대 위치 설정 */
+    bottom: 20px; /* 아래 여백 */
+    right: 20px; /* 오른쪽 여백 */
+    padding: 10px 20px; /* 패딩 설정 */
+    border: none; /* 테두리 없음 */
+    background-color: #ccc; /* 배경색 설정 */
+    border-radius: 5px; /* 테두리 둥글게 */
+    cursor: pointer; /* 커서 포인터로 변경 */
+}
+
+.popup-close-btn:hover {
+    background-color: #aaa; /* 호버시 배경색 변경 */
+}
