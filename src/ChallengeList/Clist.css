@@ -45,6 +45,7 @@
     margin-right: 20px;
     border: solid black;
     border-radius: 7px;
+    box-shadow: 5px 5px 5px gray;
 }
 #b2 {
     width: 200px;
@@ -54,6 +55,7 @@
     margin-right: 20px;
     border: solid black;
     border-radius: 7px;
+    box-shadow: 5px 5px 5px gray;
 }
 #b3 {
     width: 200px;
@@ -63,6 +65,7 @@
     margin-right: 20px;
     border: solid black;
     border-radius: 7px;
+    box-shadow: 5px 5px 5px gray;
 }
 #b4 {
     width: 200px;
@@ -72,6 +75,7 @@
     margin-right: 20px;
     border: solid black;
     border-radius: 7px;
+    box-shadow: 5px 5px 5px gray;
 }
 #b5 {
     width: 200px;
@@ -80,6 +84,7 @@
     margin-top: 10px;
     border: solid black;
     border-radius: 7px;
+    box-shadow: 5px 5px 5px gray;
 }
 #b6 {
     width: 200px;
@@ -89,6 +94,7 @@
     margin-right: 20px;
     border: solid black;
     border-radius: 7px;
+    box-shadow: 5px 5px 5px gray;
 }
 #b7 {
     width: 200px;
@@ -98,6 +104,7 @@
     margin-right: 20px;
     border: solid black;
     border-radius: 7px;
+    box-shadow: 5px 5px 5px gray;
 }
 #b8 {
     width: 200px;
@@ -107,6 +114,7 @@
     margin-right: 20px;
     border: solid black;
     border-radius: 7px;
+    box-shadow: 5px 5px 5px gray;
 }
 #b9 {
     width: 200px;
@@ -116,6 +124,7 @@
     margin-right: 20px;
     border: solid black;
     border-radius: 7px;
+    box-shadow: 5px 5px 5px gray;
 }
 #b10 {
     width: 200px;
@@ -124,6 +133,7 @@
     margin-top: 10px;
     border: solid black;
     border-radius: 7px;
+    box-shadow: 5px 5px 5px gray;
 }
 
 #search-input {

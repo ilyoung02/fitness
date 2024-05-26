@@ -22,6 +22,8 @@ import Main from "./Main";
 import notice from "./notice/notice";
 import Signup from "./Signup/Signup";
 import Login from "./Login/Login";
+import SNS1 from "./SNS/SNS1";
+import SNS2 from "./SNS/SNS2";
 
 function Menu() {
 // 로그인 팝업창
@@ -135,6 +137,9 @@ const ModalStyles = {
             <Route path="/challenge-recommend" element={<Recommend />}>추천 챌린지</Route>
             <Route path="/my-challenge" element={<Mychall />}>마이 챌린지</Route>
             <Route path="/community" element={<SNS />}>커뮤니티</Route>
+
+            <Route path="/SNS1" element={<SNS1 />}>자유 게시판</Route>
+            <Route path="/SNS2" element={<SNS2 />}>Q&A 게시판</Route>
           </Routes>
         </BrowserRouter>
 

@@ -41,7 +41,7 @@ hr {
     border: 1.5px solid black;
 }
 
-#SNShome {
+#SNS2 {
     margin-left: 10%;
     width: 80%;
     height: 2100px;
@@ -52,17 +52,7 @@ hr {
     text-align: center;
 }
 
-#SNShomet {
+#SNS2t {
     font-weight: bold;
-    font-size: 40px;
-    color: red;
-}
-
-h2 {
-    color: blue;
-}
-
-#rule {
-    padding: 10px 0px;
-    text-align: center;
+    font-size: 30px;
 }
