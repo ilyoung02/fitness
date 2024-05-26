@@ -14,7 +14,7 @@ import './Menu.css';
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 
 import Clist from "./ChallengeList/Clist";
-import Create from "./ChallengeCreate/Create"
+import Create from "./ChallengeCreate/createChall"
 import Mychall from "./MyChall/Mychall"
 import Recommend from "./RecommendChall/Recommend";
 import SNS from "./SNS/SNS";
