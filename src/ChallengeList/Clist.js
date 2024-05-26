@@ -11,11 +11,37 @@ import logo9 from "./fitnessicon/swim.png"
 import logo10 from "./fitnessicon/yoga.png"
 import styled from "styled-components";
 import './Clist.css';
+import { useState } from "react";
+import Modal from "./Modal";
 import {
     SearchOutlined
 } from '@ant-design/icons';
 
 function Clist() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
+
+    const [isModalOpen2, setIsModalOpen2] = useState(false);
+    const openModal2 = () => setIsModalOpen2(true);
+    const closeModal2 = () => setIsModalOpen2(false);
+
+    const [isModalOpen3, setIsModalOpen3] = useState(false);
+    const openModal3 = () => setIsModalOpen3(true);
+    const closeModal3 = () => setIsModalOpen3(false);
+
+    const [isModalOpen4, setIsModalOpen4] = useState(false);
+    const openModal4 = () => setIsModalOpen4(true);
+    const closeModal4 = () => setIsModalOpen4(false);
+
+    const [isModalOpen5, setIsModalOpen5] = useState(false);
+    const openModal5 = () => setIsModalOpen5(true);
+    const closeModal5 = () => setIsModalOpen5(false);
+
+    const [isModalOpen6, setIsModalOpen6] = useState(false);
+    const openModal6 = () => setIsModalOpen6(true);
+    const closeModal6 = () => setIsModalOpen6(false);
+    
     return (
         <ComponentContainer>
             <hr id="tophr"/>
@@ -37,27 +63,29 @@ function Clist() {
             <img id="f10"width={70} src={logo10}></img>
             <br/><br/>
             <br/>
-            <button id="b1">
-            </button>
-            <button id="b2">
-            </button>
-            <button id="b3">
-            </button>
-            <button id="b4">
-            </button>
-            <button id="b5">
-            </button>
+            <button id="b1" onClick={openModal}>1</button>
+            <Modal isOpen={isModalOpen} closeModal={closeModal}>
+                <h1>hi</h1>
+            </Modal>
+            <button id="b2" onClick={openModal2}>2</button>
+            <Modal isOpen={isModalOpen2} closeModal={closeModal2}>
+                <h1>hi!!!</h1>
+            </Modal>
+            <button id="b3" onClick={openModal3}>3</button>
+            <Modal isOpen={isModalOpen3} closeModal={closeModal3}>
+                <h1>Hellow~</h1>
+            </Modal>
+            <button id="b4" onClick={openModal}>4</button>
+            <button id="b5" onClick={openModal}>5</button>
             <br/>
-            <button id="b6">
-            </button>
-            <button id="b6">
-            </button>
-            <button id="b8">
-            </button>
-            <button id="b9">
-            </button>
-            <button id="b10">
-            </button>
+            <button id="b6" onClick={openModal}>6</button>
+            <button id="b7" onClick={openModal}>7</button>
+            <button id="b8" onClick={openModal}>8</button>
+            <button id="b9" onClick={openModal}>9</button>
+            <button id="b10" onClick={openModal}>10</button>
+            <Component>
+
+            </Component>
         </ComponentContainer>
     )
 }
@@ -66,4 +94,7 @@ export default Clist;
 
 const ComponentContainer = styled.div`
   text-align: center;
+`;
+
+const Component = styled.div`
 `;

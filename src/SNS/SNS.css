@@ -1,0 +1,23 @@
+#free {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 20px;
+    width: 20%;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: bold;
+}
+
+#qna {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 20%;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: bold;
+}
