@@ -9,14 +9,17 @@ function SNS() {
     return (
         <SNSContainer>
             <Component>
-                <button id="free"><a href="/SNS1">자유 게시판</a></button>
-                <button id="qna"><a href="/SNS2">Q&A 게시판</a></button>
+                <button id="free">
+                    <a href="/SNS1">자유 게시판</a>
+                </button>
+                <button id="qna">
+                    <a href="/SNS2">Q&A 게시판</a>
+                </button>
             </Component>
+            
             <Component2>
                 <div id="SNShome">
-                    <br/>
                     <p id="SNShomet"><ins>★커뮤니티 규제 기준★</ins></p>
-                    <br/>
                     <hr/>
                     <div id="rule">
                         <h2>청소년 유해정보</h2>

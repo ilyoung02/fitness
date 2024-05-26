@@ -44,12 +44,13 @@ hr {
 #SNShome {
     margin-left: 10%;
     width: 80%;
-    height: 2100px;
+    height: 1300px;
     border-radius: 15px;
     border: 2px solid black;
     background-color: white;
     box-shadow: 15px 15px 10px gray;
     text-align: center;
+    overflow-y: scroll;
 }
 
 #SNShomet {

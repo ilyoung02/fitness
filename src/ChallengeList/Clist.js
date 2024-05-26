@@ -44,7 +44,6 @@ function Clist() {
     
     return (
         <ComponentContainer>
-            <hr id="tophr"/>
             <br/>
             <div class="search">
                 <SearchOutlined id="searchicon"></SearchOutlined>
