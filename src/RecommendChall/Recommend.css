@@ -12,7 +12,9 @@
   text-align: center;
   background-color: #f9f9f9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border: 3px solid #333; /* 테이블 테두리 추가 */
+  border: 2px solid #333; /* 테이블 테두리 추가 */
+  border-collapse: separate;
+  border-radius: 5px;
 }
 
 .styledTable h2 {
