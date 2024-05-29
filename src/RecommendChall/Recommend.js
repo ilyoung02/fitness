@@ -38,7 +38,7 @@ function Recommend() {
 
   return (
     <div className="componentContainer">
-      <table class="styledTable">
+      <table class="table-style">
         <tr>
           <td>
             <h2>원하는 운동 추천받기!</h2>
@@ -57,9 +57,9 @@ function Recommend() {
         onRequestClose={closeModal}
         style={ModalStyles}
       >
-        <div className="modal-content">
+        <div className="modal-form">
           <form onSubmit={handleSubmit}>
-            <table id="createChall-tableSize">
+            <table id="Recommend-tableSize">
               <thead>
                 <tr>
                   <th colSpan="3">내 신체정보 입력</th>
@@ -99,13 +99,17 @@ function Recommend() {
                 <tr>
                   <td></td>
                   <td>
-                    <input type="submit" value="분석" className="btn_submit" />
+                    <input
+                      type="submit"
+                      value="분석"
+                      className="analysis-btn"
+                    />
                   </td>
                 </tr>
               </tbody>
             </table>
           </form>
-          <button className="popup-close-btn" onClick={closeModal}>
+          <button className="popup-end-btn" onClick={closeModal}>
             완료
           </button>
         </div>
