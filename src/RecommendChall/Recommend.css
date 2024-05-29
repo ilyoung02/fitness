@@ -27,6 +27,30 @@
   padding: 20px;
 }
 
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#createChall-tableSize {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#createChall-tableSize th {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+#createChall-tableSize td {
+  padding: 10px;
+}
+
 .recommendButton {
   padding: 10px 20px;
   font-size: 16px;
