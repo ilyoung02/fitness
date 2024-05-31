@@ -128,6 +128,7 @@ const ModalStyles = {
         <button id="recommend"><a id="link" href="challenge-recommend">추천 챌린지</a></button>
         <button id="mychall"><a id="link" href="my-challenge">마이 챌린지</a></button>
         <button id="SNS"><a id="link" href="community">커뮤니티</a></button>
+        <button id="SNS"><a id="link" href="Login">로그인</a></button>
         <br/>
         <BrowserRouter>
           <Routes>
@@ -137,6 +138,7 @@ const ModalStyles = {
             <Route path="/challenge-recommend" element={<Recommend />}>추천 챌린지</Route>
             <Route path="/my-challenge" element={<Mychall />}>마이 챌린지</Route>
             <Route path="/community" element={<SNS />}>커뮤니티</Route>
+            <Route path="/Login" element={<Login />}>로그인</Route>
 
             <Route path="/SNS1" element={<SNS1 />}>자유 게시판</Route>
             <Route path="/SNS2" element={<SNS2 />}>Q&A 게시판</Route>
