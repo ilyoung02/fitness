@@ -27,3 +27,21 @@ Translate into Korean and Use the output in the following JSON format:
 몸무게는 80kg이고 체지방량은23kg, 골격근량은 33kg이다.
 운동 목표는 체지방량:15kg, 골격근량:37kg이다.
 """
+
+<img width="1280" height="700" alt="Image" src="https://github.com/user-attachments/assets/016b8e06-29dd-458f-bc81-09eb80461aa8" />
+
+<img width="1277" height="700" alt="Image" src="https://github.com/user-attachments/assets/601efca4-2d68-4a32-aa8d-8d562555dedb" />
+
+<img width="1277" height="697" alt="Image" src="https://github.com/user-attachments/assets/8d73d07b-4f53-436c-9fd9-ab4cdac57cf6" />
+
+<img width="1276" height="695" alt="Image" src="https://github.com/user-attachments/assets/a72c23df-65d3-48f1-9e91-72247e7cffb6" />
+
+<img width="1270" height="695" alt="Image" src="https://github.com/user-attachments/assets/5d00b9ae-dcfc-4fdf-92be-a34d14f097c2" />
+
+<img width="1277" height="466" alt="Image" src="https://github.com/user-attachments/assets/91036555-4f55-4735-b3ae-01450c8a16d0" />
+
+<img width="1277" height="566" alt="Image" src="https://github.com/user-attachments/assets/250fe259-3aba-4b8c-b1c9-71940c6e6d1c" />
+
+<img width="1277" height="696" alt="Image" src="https://github.com/user-attachments/assets/cc2d3dda-1621-45da-8933-659b84dcc4ae" />
+
+<img width="1238" height="679" alt="Image" src="https://github.com/user-attachments/assets/e36e634d-0c6a-47df-b470-ce81caf01a66" />
