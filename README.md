@@ -30,7 +30,7 @@ Translate into Korean and Use the output in the following JSON format:
 
 <img width="1280" height="700" alt="Image" src="https://github.com/user-attachments/assets/016b8e06-29dd-458f-bc81-09eb80461aa8" />
 
-<img width="185" height="283" alt="Image" src="https://github.com/user-attachments/assets/2a0cfe25-e0b3-434d-b009-9c85bc26a685" />
+<img width="1277" height="700" alt="Image" src="https://github.com/user-attachments/assets/601efca4-2d68-4a32-aa8d-8d562555dedb" />
 
 <img width="1277" height="697" alt="Image" src="https://github.com/user-attachments/assets/8d73d07b-4f53-436c-9fd9-ab4cdac57cf6" />
 
